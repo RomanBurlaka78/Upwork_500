@@ -1,0 +1,52 @@
+@import "vendor/reset";
+// @import "variables";
+@import "globals";
+@import "header";
+@import "footer";
+@import "blocks/banner";
+
+
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+   
+  
+    
+    @media (max-width:1200px) {
+        max-width: 1100px;
+        
+    }
+    @media (max-width:992px) {
+        max-width: 978px;
+        
+    }
+
+    @media (max-width:768px) {
+        max-width: 750px;
+        
+    }
+
+    @media (max-width:480px) {
+        max-width: none;
+        padding: 0 10px;
+        
+    }
+}
+body {
+  
+   
+    font-size: 21px;
+    color: white;
+  
+   
+}
+
+.main {
+    height: auto;
+}
+
+
+
+

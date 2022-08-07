@@ -1,0 +1,72 @@
+.banner_inner {
+    display: flex;
+    gap: 7px;
+    margin-top: 165px;
+    margin-left: 164px;
+  
+
+}
+.banner_inner_left {
+   
+      flex: 0 0 40%;
+
+}
+.banner_title {
+    
+  
+    width: 100%;
+    font-family:Europa;
+    font-weight: bolt;
+    font-size: 48px;
+    line-height: 62px;
+    color: #1A2578;
+    
+}
+.banner_text {
+    
+    display: block;
+    font-family:Europa;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #484C63;
+    margin: 32px 0;
+    padding-right: 20px;
+}
+.btn_wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.banner_inner_right {
+
+    flex: 0 0 60%;
+    position: relative;
+
+   
+}
+.banner_img {
+    position: absolute;
+    display: block;
+    top: -75px;
+    left: -160px;
+}
+
+.text_bottom {
+    position: absolute;
+    left: 28%;
+    bottom: -40%;
+  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 57px;
+    // text-align: center;
+    color: #1A2578;
+    & span {
+        color: #BF0830;
+
+    }
+
+}
