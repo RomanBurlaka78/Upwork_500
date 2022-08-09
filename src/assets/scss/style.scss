@@ -4,6 +4,10 @@
 @import "header";
 @import "footer";
 @import "blocks/banner";
+@import "blocks/section_divider";
+@import "blocks/section_bigtitle";
+@import "blocks/webtofee";
+
 
 
 
@@ -14,33 +18,33 @@
    
   
     
-    @media (max-width:1200px) {
-        max-width: 1100px;
+    // @media (max-width:1200px) {
+    //     max-width: 1100px;
         
-    }
-    @media (max-width:992px) {
-        max-width: 978px;
+    // }
+    // @media (max-width:992px) {
+    //     max-width: 978px;
         
-    }
+    // }
 
-    @media (max-width:768px) {
-        max-width: 750px;
+    // @media (max-width:768px) {
+    //     max-width: 750px;
         
-    }
+    // }
 
-    @media (max-width:480px) {
-        max-width: none;
-        padding: 0 10px;
+    // @media (max-width:480px) {
+    //     max-width: none;
+    //     padding: 0 10px;
         
-    }
+    // }
 }
 body {
-  
-   
+    font-family: 'Europa', sans-serif;
     font-size: 21px;
     color: white;
-  
-   
+}
+.wrapper {
+    background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
 }
 
 .main {

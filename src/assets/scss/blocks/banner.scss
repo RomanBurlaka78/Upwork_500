@@ -1,29 +1,55 @@
+.banner  {
+   padding: 129px 0 210px 164px;
+    position: relative;
+    @media(max-width:1400px) {
+        padding: 100px 0 100px 129px;
+    }
+    @media(max-width:992px) {
+        padding: 75px 0 390px 129px;
+    }
+
+    @media(max-width:768px) {
+        padding: 50px 0 320px 129px;
+    }
+}
 .banner_inner {
     display: flex;
     gap: 7px;
-    margin-top: 165px;
-    margin-left: 164px;
   
-
 }
 .banner_inner_left {
-   
       flex: 0 0 40%;
-
+      @media(max-width:992px) {
+       flex: 1 1 100%;
+       text-align: center;
+    }
 }
 .banner_title {
-    
-  
     width: 100%;
     font-family:Europa;
-    font-weight: bolt;
+    font-weight: bold;
     font-size: 48px;
     line-height: 62px;
     color: #1A2578;
-    
+    @media(max-width:1200px) {
+        font-size: 46px;
+        line-height: 58px;
+    }
+
+    @media(max-width:992px) {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    @media(max-width:768px) {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    @media(max-width:480px) {
+        font-size: 28px;
+        line-height: 32px;
+    }
 }
 .banner_text {
-    
     display: block;
     font-family:Europa;
     font-weight: 400;
@@ -32,41 +58,43 @@
     color: #484C63;
     margin: 32px 0;
     padding-right: 20px;
+    @media (max-width:768px) {
+        font-size: 18px;
+    }
 }
 .btn_wrapper {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    @media(max-width: 992px) {
+        justify-content: center;
+
+    }
 }
 
 
 .banner_inner_right {
-
     flex: 0 0 60%;
     position: relative;
-
-   
 }
 .banner_img {
     position: absolute;
-    display: block;
-    top: -75px;
-    left: -160px;
-}
-
-.text_bottom {
-    position: absolute;
-    left: 28%;
-    bottom: -40%;
-  
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 57px;
-    // text-align: center;
-    color: #1A2578;
-    & span {
-        color: #BF0830;
-
+    max-width: 100%;
+    right: 75px;
+    bottom: 0;
+    @media(max-width:1400px) {
+        max-width: 600px;
+        // right: 0;
     }
-
+    @media(max-width:992px) {
+        max-width: 500px;
+       
+    }
+    @media(max-width:768px) {
+        max-width: 400px;   
+    }
+   
+    
+ 
 }
+

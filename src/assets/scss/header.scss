@@ -1,10 +1,8 @@
 
-header {
-    width: 100%;
-    margin: 0;
-    padding-top: 20px;
-    font-family: inherit;
+.header {
+    // width: 100%;
     overflow: hidden;
+   
    
     
    
@@ -15,9 +13,19 @@ header {
 
 }
 .nav {
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+    font-family: inherit;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
+    @media(max-width:1400px) {
+        padding-left: 148px;
+        overflow: hidden;
+    }
+    
     
     &_btns {
         margin-left: auto;
@@ -27,37 +35,30 @@ header {
 .navbar{
 
     display:flex;
-    flex-wrap:wrap;
     align-items:center;
     justify-content:space-between;
-    padding:1rem;
-    padding-left: 0;
-    margin-left: 174px;
+   
    
    
 }
 .navbar_nav{
     display:flex;
+    justify-content: end;
     gap: 20px;
     flex-wrap:wrap;
     align-items:center;
     list-style: none;
     padding:.5rem 0;
-    margin-right: 198px;
    
    
-
+   
     @media (max-width:1450px) {
-        gap: 5px;
+        gap: 2px;
         margin-left: 0;
     }
    
 }
-.header-container {
-    max-width: 1400px;
-    margin: 0 auto;
-  
-}
+
 .logo {
     background: #BF0830;
     border-radius: 50%;
@@ -65,14 +66,7 @@ header {
 }
 .navbar_brand{
     padding: 10px;
-    // margin-left: 1.5rem;
-    // width: 31px;
-    // height: 35px;
-    
-    // font-size:1.25rem;
-    // text-decoration:none;
-    // white-space:nowrap;
-    // color: linear-gradient(#E3E7F6 100%,  #E3E7F6 0%);
+ 
     img {
        
         display: block;
@@ -84,6 +78,7 @@ header {
         @media(max-width:1200px) {
             // max-width: 130px;
         }
+       
     }
 
     
@@ -92,6 +87,13 @@ header {
     text-decoration: none;
     padding-left: 5px;
    
+   
+}
+.logo_text{
+     @media(max-width:480px) {
+         display: none;
+       
+    }
 }
 
 .nav_link {
@@ -101,14 +103,18 @@ header {
     line-height: 20px;
     text-decoration: none;
     margin-right: 20px;
-    color: linear-gradient(#E3E7F6 100%,  #E3E7F6 0%);
+    color: #1A2578;
     transition: 0.3s ease-in-out; 
     text-transform: uppercase;
     font-family: 'Montserrat';
 
     @media (max-width:1400px) {
         font-size: 14px;
-        margin-right: 15px;
+        margin-right: 10px;
+    }
+    @media (max-width:1050px) {
+        font-size: 14px;
+        margin-right: 5px;
     }
     
 
@@ -240,11 +246,11 @@ header {
             width: 100%;
             height: 100vh;
             text-align: center;
+           
             transition: 0.5s;
             z-index: 1;
-            // margin-top: 50px;
-            @media (max-width:992px) {
-            padding-top:20%;
+              @media (max-width:992px) {
+            padding-top:0;
             gap: 100px;
             }
             .nav_link {
@@ -252,6 +258,7 @@ header {
                 display: block;
                 font-size: 20px;
                 transition: all .5s ease-in-out;
+               
 
                 &:hover {
                     color: orange;
@@ -262,10 +269,13 @@ header {
 
             &.active {
                 left: 0; 
+              
+              
                
               }
               &_item {
-                margin: 16px 0;
+                margin: 12px 0;
+                
             }
            
 
