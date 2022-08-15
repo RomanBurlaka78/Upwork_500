@@ -1,0 +1,50 @@
+
+.proffesion {
+    padding: 0 60px 0 180px;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width:768px) {
+        flex-direction: column;
+            
+    }
+
+    &_title {
+        flex: 0 0 60%;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 27px;
+        color: #484C63;
+        @media(max-width:768px) {
+            flex-direction: column;
+            padding-bottom: 40px ;
+                
+        }
+       
+
+    }
+
+    &_subtitle {
+
+        &_text {
+            font-size: 20px;
+            line-height: 27px;
+            color: #8F90A6;
+        }
+
+        &_second {
+            display: inline;
+        }
+
+    }
+
+    
+    &_button {
+        display: flex;
+        flex: end;
+    }
+
+    
+}
+
+
+
