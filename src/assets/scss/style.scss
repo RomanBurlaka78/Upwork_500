@@ -8,8 +8,9 @@
 @import "blocks/section_bigtitle";
 @import "blocks/webtofee";
 @import "blocks/carts";
-@import "blocks/proffesions_career";
 @import "blocks/recomended-career";
+@import "blocks/proffesions_career";
+@import "blocks/form-contact";
 
 
 
@@ -45,6 +46,7 @@ body {
     font-family: 'Europa', sans-serif;
     font-size: 21px;
     color: white;
+    overflow-x: hidden;
 }
 .wrapper {
     background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);

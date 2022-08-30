@@ -1,0 +1,82 @@
+.recomended-career {
+    &__wrapper {
+        max-width: 1105px;
+        margin: 60px auto;
+        // padding: 20px 60px;
+        display: flex;
+        
+        justify-content: space-between;
+
+        @media (max-width:992px) {
+            flex-wrap: wrap;
+        }
+        // gap: 150px;
+       
+
+    }
+    &__left {
+       flex: 0 0 70%;
+       padding-left: 69px;
+       @media (max-width:992px) {
+        flex: 0 0 100%;
+        margin-bottom: 120px;
+       
+    }
+       &-logo {
+        vertical-align: top;
+       }
+      
+    
+        &-text {
+            display: inline-block;
+            max-width: 443px;
+            margin-left: 27px;
+            font-weight: 700;
+            font-size: 36px ;
+            line-height: 48px ;
+            color: #1A2578;
+        }
+
+    }
+    &__right {
+        flex: 0 0 30%;
+        padding-right: 122px;
+        @media (max-width:992px) {
+            flex: 0 0 100%;
+            
+            margin-bottom: 20px;
+           
+            padding-left: 120px;
+        }
+     
+        // justify-content: end;
+
+          &-figure {
+            max-width: 50px;
+            font-weight: 700;
+            font-size: 36px ;
+            line-height: 62px ;
+            color: #000;
+            
+        }
+
+        &-image-second {
+            display: block;
+        
+        }
+
+        &-textBottom {
+            font-size: 18px;
+            line-height: 32px;
+            color: #424B5A;
+        }
+    }
+   
+  
+
+    &__career-content {
+        display: flex;
+       
+    }
+
+}
