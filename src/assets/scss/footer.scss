@@ -65,7 +65,7 @@ footer {
     margin: 70px 0 20px 0;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: clamp(0.625rem, -0.875rem + 7.5vw, 1rem);
     line-height: 24px;
     color: #FFFFFF;
 }
@@ -82,7 +82,7 @@ footer {
 .footer_link { 
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: clamp(0.625rem, -0.875rem + 7.5vw, 1rem);
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
@@ -100,7 +100,7 @@ footer {
     justify-content: space-between;
     font-weight: 400;
     line-height: 19.5px;
-    font-size: 16px;
+    font-size: clamp(0.625rem, -0.875rem + 7.5vw, 1rem);
     color: #FFFFFF;
     padding: 35px 0 0 0  ;
     @media (max-width:768px) {

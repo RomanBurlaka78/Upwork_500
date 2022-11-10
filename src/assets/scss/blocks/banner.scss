@@ -57,27 +57,27 @@
     width: 100%;
     font-family:Europa;
     font-weight: bold;
-    font-size: 48px;
+    font-size: clamp(2rem, 1.714rem + 1.43vw, 3rem);
     line-height: 62px;
     color: #1A2578;
-    @media(max-width:1200px) {
-        font-size: 46px;
-        line-height: 58px;
-    }
+    // @media(max-width:1200px) {
+    //     font-size: 46px;
+    //     line-height: 58px;
+    // }
 
-    @media(max-width:992px) {
-        font-size: 42px;
-        line-height: 52px;
-        padding-right: 50px;
-    }
-    @media(max-width:768px) {
-        font-size: 38px;
-        line-height: 42px;
-    }
-    @media(max-width:480px) {
-        font-size: 28px;
-        line-height: 32px;
-    }
+    // @media(max-width:992px) {
+    //     font-size: 42px;
+    //     line-height: 52px;
+    //     padding-right: 50px;
+    // }
+    // @media(max-width:768px) {
+    //     font-size: 38px;
+    //     line-height: 42px;
+    // }
+    // @media(max-width:480px) {
+    //     font-size: 28px;
+    //     line-height: 32px;
+    // }
 
     span {
         color: #BF0830;
@@ -115,22 +115,22 @@
     display: block;
     font-family:Europa;
     font-weight: 400;
-    font-size: 22px;
+    font-size: clamp(1rem, 0.893rem + 0.54vw, 1.375rem);
     line-height: 33px;
     color: #484C63;
     margin: 32px 0;
     padding-right: 20px;
 
-    @media (max-width:1200px) {
-        font-size: 18px;
-    }
-    @media (max-width:768px) {
-        font-size: 16px;
-    }
+    // @media (max-width:1200px) {
+    //     font-size: 18px;
+    // }
+    // @media (max-width:768px) {
+    //     font-size: 16px;
+    // }
 }
 .text_mozi {
     padding-right: 57px;
-    font-size: 28px;
+    font-size: clamp(1.375rem, 1.268rem + 0.54vw, 1.75rem);
     line-height: 36px;
     @media (max-width:992px) {
         font-size: 22px;
@@ -138,11 +138,11 @@
         padding: 0 20px;
 
     }
-    @media (max-width:768px) {
-        font-size: 20px;
-        line-height: 22px;
+    // @media (max-width:768px) {
+    //     font-size: 20px;
+    //     line-height: 22px;
 
-    }
+    // }
 
  
 }
@@ -233,7 +233,7 @@
         right: 20px;
     }
     @media(max-width:480px) {
-        width: 400px;
+        width: 280px;
         right: 0;
     }
 
@@ -254,14 +254,18 @@
     --about {
     padding-left: 50px;
     font-weight: 400;
-    font-style: 16px;
+    font-style: clamp(0.625rem, -0.875rem + 7.5vw, 1rem);
     line-height: 27px;
     color: #484C63;
 
     @media(max-width:480px) {
-        padding:  0 0 0  20px;
+        padding-left:  0;
     }
 
+    }
+    
+    @media(max-width:480px) {
+        padding-left:  0;
     }
   
 

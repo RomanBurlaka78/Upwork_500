@@ -2,6 +2,10 @@
     
     max-width: 589px;
     margin: 233px auto 0 auto;
+    @media (max-width:480px) {
+        margin: 80px auto 0 auto;
+        
+    }
 
 }
 .title_center {
@@ -31,4 +35,5 @@
     padding: 50px 0 140px 0 ;
     display: flex;
     justify-content: center;
+ 
 }

@@ -48,6 +48,9 @@ body {
     color: white;
     overflow-x: hidden;
 }
+.locked {
+    overflow: hidden;
+}
 .wrapper {
     background: linear-gradient(247.11deg, #E3E7F6 3.56%, rgba(227, 231, 246, 0) 115.17%);
     overflow: hidden;
